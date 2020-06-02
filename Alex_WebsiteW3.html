@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<title>AlexanderFoulkesWebsite</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="styleshet" href="style.css" type="text/css"/>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://i.imgur.com/RrjZrpL.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url('https://i.imgur.com/RrjZrpL.jpg');
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url('https://i.imgur.com/RrjZrpL.jpg');
+  min-height: 300px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> EXPERIENCE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQFARKfm26XzrA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=8VLXRUPwEt3OmreaLTqyhVKN7OyYJjDQV6VaMk6LrUo" style="border-radius:100%">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Alexander <span class="w3-hide-small">Foulkes</span></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Here to Help</em></p>
+  <p>Providing excellent performance is the hallmark of my academic and professional career. Review of my qualifications will showcase superb business acumen and a phenomenal work ethic. I am highly regarded for my skills in interfacing with customers, analyzing data, creative problem solving, team collaboration, and more. Confident in my ability to provide high quality results on a constitent basis, I am prepared to greatly contribute to your team.</p>
+ 
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="experience">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide">What I've done</span>
+  </div>
+</div>
+
+<!--Experience-->
+<div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://i.pinimg.com/originals/d4/df/0b/d4df0bcf39622917e8408f4512406ce9.png" alt="Samsara" width="200" hieght="200">
+      <h3>Samsara</h3>
+      <p class="w3-opacity">Account Development Representative</p>
+      <ul>
+        <li>Negotiated and consulted with customers across all time zones by making and sending a minimum of 150 calls and emails each day</li>
+          <li>Awarded top salesperson of the week during my first month in the role by exceeding quota by over 25%</li>
+          <li>Organized customer information and analytics daily by mastery of Salesforce and Google Suite</li>
+        </ul>
+      <p style="border-bottom: 15px solid gainsboro"></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://i.pinimg.com/originals/d4/df/0b/d4df0bcf39622917e8408f4512406ce9.png" alt="Samsara" width="200" hieght="200">
+      <h3>Samsara</h3>
+      <p class="w3-opacity">Data Validation Specialist</p>
+      <ul>
+        <li>Provided Sales Enablement and Sales Operations with vital customer information by generating and organizing large data sets</li>
+          <li>Led enterprise level projects by managing and training new team members</li>
+          <li>Discovered and recorded important information on government entities, enterprise companies, and insurance companies through conversations with high level decision makers</li>
+        </ul>
+      <p style="border-bottom: 15px solid gainsboro"></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAAC4CAMAAABn7db1AAAAM1BMVEX7mAD////+5b/7nhD/+fD9zID/8uD8skD8pSD+2aD9v2D90pD+7ND8qzD+37D8uFD9xXCszlxTAAADkElEQVR4nO2cCU4sMQwF41kZ9vufFtr64g9Mp/s5ixfJdYISKsBJOimHoJQkSZIkSZIkSZIkSZI43J6sDRqh09laoQ0iulytJVqghfeAvbB4xF7oH+F6oR+C9fJfPFgvdE+kXug3hzC90F/OR2sljAdxunxYO0E8igfpZU08RC/r4gF6qYj776Uq7r2XDXG6PFvbbbAl/t3Lm7VflW1xohevveyJ08lpL7viXnsBxH32Aol77AUTd9gLKu6uF1ycTp/WsvcIxIleHS3tROJENze9CMX99CIVd9OLXNxJLy3iLnppEvfQy4rU8wlRtz7KWFEqxxfE3HircU28lLdXRN10q3FdvJRPqBfDremaeDneEHO7XqripVwviLpVLxvipZwd97IpXp7eEXOTXrbFS/nw2sueeDmeEXP9rcZd8e9eDpC68lYjIF4KNgTobk1D4uAQoNoLJo4OAYq9oOLoEKDWCy4ODgFavQjE0SFApxeRODoEaBxlCMXBIUBhq1Eqjg4B07ca5eLoEDB5a7pBHB4CpvbSJI4OATN7aRRHh4B5vbSKw0PArF7axdEhYFIvPeLoEDBlq7FLHB4CJmw1doqjQ8D4relucXQIGN1Lvzg8BIztZYQ4OgQM7WWIODwEDOxlkHi5Yj/zcb2MEQd/QRdGPTAxRBz8k0gj19IDxMF/QgsDV6Pd4uCv5cLQ9X+nOPqHkIbvuPSJg/96FkbvWfSIW1XSKQ6ugRZm7Ms1i4OrzoUpO1uN4m94JZPOtprEJZXMOh1qEQfXmjT1PE4ufsVW9wszT0Cl4uD6eGHuGaJQ3EUlcnHBODX9nFwgLhi6FU6acXF86FY520fFBZXofN2HiQvGKa3v4xBxwdCt90UiIC4YuhW/Ad0Vd1gJIi4Yp5S/W90WFwzd2l8Kb4kLhm79b23r4pJKDG7bVMXxccrmvkpFXDB0G90QWhUXDN1md7LWxL1XUhPH/1Fa3iODJR+xvbnX7m18961V2/y2YZu2g/cGmrw93Nhv0PbxRoJY20EljNTbQyWMTNtHJYxE20slTMRKGFjb2/tfaCXm1yD/Aml7fLMsYiVMxEqYiJUwESthIlbCRKyEqXu7eDagTk3b/uL9DpVKHDx1sEPESpiIlTARK2EiVsJErIT5VYm/Z7zq3Hk7ewhrhx9t881AIRErYSJWwkSshIlYCROxEsbt0ixJkiRJkiRJkiRJksSAL0EDI73uij0PAAAAAElFTkSuQmCC" alt="Publishing-Factory" width="200" hieght="200">
+      <h3>The Publishing Factory</h3>
+      <p class="w3-opacity">Intern</p>
+       <ul>
+        <li>Streamlined workflow by organizing monthly financial information</li>
+          <li>Expanded social media presence by Creating Facebook events for company seminars</li>
+        </ul>
+      <p style="border-bottom: 15px solid gainsboro"></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAAC4CAMAAABn7db1AAAAM1BMVEX7mAD////+5b/7nhD/+fD9zID/8uD8skD8pSD+2aD9v2D90pD+7ND8qzD+37D8uFD9xXCszlxTAAADkElEQVR4nO2cCU4sMQwF41kZ9vufFtr64g9Mp/s5ixfJdYISKsBJOimHoJQkSZIkSZIkSZIkSZI43J6sDRqh09laoQ0iulytJVqghfeAvbB4xF7oH+F6oR+C9fJfPFgvdE+kXug3hzC90F/OR2sljAdxunxYO0E8igfpZU08RC/r4gF6qYj776Uq7r2XDXG6PFvbbbAl/t3Lm7VflW1xohevveyJ08lpL7viXnsBxH32Aol77AUTd9gLKu6uF1ycTp/WsvcIxIleHS3tROJENze9CMX99CIVd9OLXNxJLy3iLnppEvfQy4rU8wlRtz7KWFEqxxfE3HircU28lLdXRN10q3FdvJRPqBfDremaeDneEHO7XqripVwviLpVLxvipZwd97IpXp7eEXOTXrbFS/nw2sueeDmeEXP9rcZd8e9eDpC68lYjIF4KNgTobk1D4uAQoNoLJo4OAYq9oOLoEKDWCy4ODgFavQjE0SFApxeRODoEaBxlCMXBIUBhq1Eqjg4B07ca5eLoEDB5a7pBHB4CpvbSJI4OATN7aRRHh4B5vbSKw0PArF7axdEhYFIvPeLoEDBlq7FLHB4CJmw1doqjQ8D4relucXQIGN1Lvzg8BIztZYQ4OgQM7WWIODwEDOxlkHi5Yj/zcb2MEQd/QRdGPTAxRBz8k0gj19IDxMF/QgsDV6Pd4uCv5cLQ9X+nOPqHkIbvuPSJg/96FkbvWfSIW1XSKQ6ugRZm7Ms1i4OrzoUpO1uN4m94JZPOtprEJZXMOh1qEQfXmjT1PE4ufsVW9wszT0Cl4uD6eGHuGaJQ3EUlcnHBODX9nFwgLhi6FU6acXF86FY520fFBZXofN2HiQvGKa3v4xBxwdCt90UiIC4YuhW/Ad0Vd1gJIi4Yp5S/W90WFwzd2l8Kb4kLhm79b23r4pJKDG7bVMXxccrmvkpFXDB0G90QWhUXDN1md7LWxL1XUhPH/1Fa3iODJR+xvbnX7m18961V2/y2YZu2g/cGmrw93Nhv0PbxRoJY20EljNTbQyWMTNtHJYxE20slTMRKGFjb2/tfaCXm1yD/Aml7fLMsYiVMxEqYiJUwESthIlbCRKyEqXu7eDagTk3b/uL9DpVKHDx1sEPESpiIlTARK2EiVsJErIT5VYm/Z7zq3Hk7ewhrhx9t881AIRErYSJWwkSshIlYCROxEsbt0ixJkiRJkiRJkiRJksSAL0EDI73uij0PAAAAAElFTkSuQmCC" alt="Publishing-Factory" width="200" hieght="200">
+      <h3>The Publishing Factory</h3>
+      <p class="w3-opacity">Intern</p>
+      <ul>
+        <li>Streamlined workflow by organizing monthly financial information</li>
+          <li>Expanded social media presence by Creating Facebook events for company seminars</li>
+        </ul>
+      <p style="border-bottom: 15px solid gainsboro"></p>
+    </div>
+  </div>
+
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide">I'd love to hear from you</span>
+  </div>
+</div>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-5">
+  <div class="w3-row w3-padding-5 w3-section">
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> SanFrancisco, CA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: Email me for personal number<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: alexandernfoulkes@gmail.com<br>
+      </div>
+      <p>You can email me directly, or leave me a note:</p>
+      <form action="mailto:alexanderfoulkes@gmail.com" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.linkedin.com/in/alexanderfoulkes/" title="LinkedIn" target="_blank" class="w3-hover-text-blue"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
